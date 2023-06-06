@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#navbar-pinterest {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    width: 100%;
+    background-color: white;
+    padding: 5px;
+    z-index: 100;
+    font-size: 16px;
+    font-weight: 560;
+}
+
+#navbar-pinterest ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+#navbar-pinterest li {
+    margin-right: 10px;
+}
+
+#navbar-pinterest img {
+    width: 30px;
+}
+
+#navbar-pinterest .finder {
+    padding: 10px;
+    border: none;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    color: #fff;
+    background-image: url(https://images.vexels.com/media/users/3/132068/isolated/preview/f9bb81e576c1a361c61a8c08945b2c48-icono-de-busqueda.png);
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 20px;
+    width: 155vh;
+    height: 50px;
+    padding-left: 40px;
+}
+
+#navbar-pinterest #profile-img img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+#navbar-pinterest .perfil img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+#navbar-pinterest .Ovalo {
+    background-color: black;
+    border-radius: 45%;
+    padding: 15px;
+    color: white;
+    margin-right: 10px;
+}
+
+#navbar-pinterest .barra {
+    margin-left: 5px;
+}
+
+#content {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 15px;
+    margin-top: 95px;
+    max-width: 180vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-image {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 32em;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.card-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+    #navbar-pinterest {
+        font-size: 14px;
+        padding: 3px;
+    }
+    
+    #navbar-pinterest img {
+        width: 25px;
+    }
+    
+    #navbar-pinterest .finder {
+        width: 100%;
+        padding-left: 30px;
+    }
+    
+    #navbar-pinterest #profile-img img,
+    #navbar-pinterest .perfil img {
+        width: 30px;
+        height: 30px;
+    }
+    
+    #navbar-pinterest .Ovalo {
+        padding: 10px;
+    }
+    
+    #content {
+        max-width: 100vh;
+    }
+    
+    .card-image {
+        padding-bottom: 20em;
+        border-radius: 15px;
+    }
+}
